@@ -1,7 +1,26 @@
 {
-  "latest": "1.5.0",
-  "download": "",
+  "latest": "1.5.1",
+  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.1.jar",
+  "downloads": {
+    "1.5.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.1.jar",
+    "1.5.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.0.jar",
+    "1.4.4": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.4.4.jar",
+    "1.4.3": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.4.3.jar",
+    "1.4.2": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.4.2.jar",
+    "1.4.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.4.1.jar",
+    "1.4.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.4.0.jar",
+    "1.3.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.3.0.jar",
+    "1.2.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.2.1.jar",
+    "1.2.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.2.0.jar",
+    "1.1.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.1.0.jar",
+    "1.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.0.0.jar"
+  },
   "changelog": [
+    "# 1.5.1",
+    "## Nowości (New Features)",
+    "- link do pobrania pod każdą wersją (download link under every version)",
+    "- przycisk Pobierz przy nowej wersji (Download button for a new version)",
+    "",
     "# 1.5.0",
     "## Nowości (New Features)",
     "- ścieżka kitu: mod sam klika KIT GRACZ i Odbierz (kit path: the mod clicks KIT GRACZ and Odbierz by itself)",
