@@ -1,7 +1,13 @@
 {
-  "latest": "1.4.3",
+  "latest": "1.4.4",
   "download": "",
   "changelog": [
+    "# 1.4.4",
+    "## Nowości (New Features)",
+    "- sprawdzanie aktualizacji z GitHuba (update checking from GitHub)",
+    "- wybór itemów z kitu jak w trybie kreatywnym (pick kit items like in creative mode)",
+    "- przycisk Skanuj kit (Scan kit button)",
+    "",
     "# 1.4.3",
     "## Nowości (New Features)",
     "- dodano wybór języka: polski i angielski (added language choice: Polish and English)",
