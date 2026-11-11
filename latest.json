@@ -1,7 +1,17 @@
 {
-  "latest": "1.4.4",
+  "latest": "1.5.0",
   "download": "",
   "changelog": [
+    "# 1.5.0",
+    "## Nowości (New Features)",
+    "- ścieżka kitu: mod sam klika KIT GRACZ i Odbierz (kit path: the mod clicks KIT GRACZ and Odbierz by itself)",
+    "- edytor ścieżki kitu w zakładce General (kit path editor in the General tab)",
+    "## Naprawy Błędów (Bug Fixes)",
+    "- naprawiono Skanuj kit (fixed Scan kit)",
+    "- naprawiono wybieranie itemów z kitu (fixed picking kit items)",
+    "- naprawiono makro /kit przy menu wyboru kitów (fixed /kit macro with the kit selection menu)",
+    "- naprawiono wkładanie do shulkera po nieudanym kicie (fixed shulker deposit after a failed kit)",
+    "",
     "# 1.4.4",
     "## Nowości (New Features)",
     "- sprawdzanie aktualizacji z GitHuba (update checking from GitHub)",
