@@ -1,7 +1,8 @@
 {
-  "latest": "1.5.1",
-  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.1.jar",
+  "latest": "1.5.2",
+  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.2.jar",
   "downloads": {
+    "1.5.2": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.2.jar",
     "1.5.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.1.jar",
     "1.5.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.0.jar",
     "1.4.4": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.4.4.jar",
@@ -16,6 +17,10 @@
     "1.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.0.0.jar"
   },
   "changelog": [
+    "# 1.5.2",
+    "## Nowości (New Features)",
+    "- makro odtwarza się przy otwartym menu ESC (macro plays with the ESC menu open)",
+    "",
     "# 1.5.1",
     "## Nowości (New Features)",
     "- link do pobrania pod każdą wersją (download link under every version)",
