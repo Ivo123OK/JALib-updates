@@ -1,10 +1,17 @@
 {
   "notifications": [
     {
+      "id": "1571605780438712511-0",
+      "to": "niedzwiadekubus",
+      "text": "nie, nie jestem",
+      "author": "Ivo123OK",
+      "date": 1794770417080
+    },
+    {
       "id": "1571602207797940307-0",
       "to": "Ivo123OK",
       "text": "Test powiadomień",
-      "author": "= Ivo123OK",
+      "author": "Ivo123OK",
       "date": 1794769565296
     }
   ]
