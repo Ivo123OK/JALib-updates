@@ -177,8 +177,8 @@ def main():
     if not token or not channel:
         print("Brak DISCORD_BOT_TOKEN albo DISCORD_NOTIFY_CHANNEL - pomijam (ustaw sekrety w repozytorium).")
         return 0
-    allowed = {x.strip() for x in os.environ.get("DISCORD_ALLOWED_USERS", "").split(",") if x.strip()} or None
-    author_name = os.environ.get("DISCORD_AUTHOR_NAME", "").strip() or None
+    allowed = {re.sub(r"\D", "", x) for x in os.environ.get("DISCORD_ALLOWED_USERS", "").split(",") if re.sub(r"\D", "", x)} or None
+    author_name = os.environ.get("DISCORD_AUTHOR_NAME", "").strip().lstrip("=:").strip().strip("\"'").strip() or None
     try:
         messages = api("GET", f"/channels/{channel}/messages?limit=100", token) or []
     except urllib.error.HTTPError as e:
