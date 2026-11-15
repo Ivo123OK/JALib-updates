@@ -1,3 +1,11 @@
 {
-  "notifications": []
+  "notifications": [
+    {
+      "id": "1571602207797940307-0",
+      "to": "Ivo123OK",
+      "text": "Test powiadomień",
+      "author": "= Ivo123OK",
+      "date": 1794769565296
+    }
+  ]
 }
