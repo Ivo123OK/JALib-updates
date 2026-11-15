@@ -170,8 +170,10 @@ def react(token, channel, msg, ok):
 
 
 def main():
-    token = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
-    channel = os.environ.get("DISCORD_NOTIFY_CHANNEL", "").strip()
+    token = os.environ.get("DISCORD_BOT_TOKEN", "").strip().strip("\"'").strip()
+    if token.lower().startswith("bot "):
+        token = token[4:].strip()
+    channel = re.sub(r"\D", "", os.environ.get("DISCORD_NOTIFY_CHANNEL", "").strip().rstrip("/").split("/")[-1])
     if not token or not channel:
         print("Brak DISCORD_BOT_TOKEN albo DISCORD_NOTIFY_CHANNEL - pomijam (ustaw sekrety w repozytorium).")
         return 0
@@ -180,6 +182,11 @@ def main():
     try:
         messages = api("GET", f"/channels/{channel}/messages?limit=100", token) or []
     except urllib.error.HTTPError as e:
+        if e.code == 401:
+            looks = token.count(".") == 2 and len(token) > 50
+            print("Blad Discorda 401: zly token bota. " + ("Token wyglada poprawnie - moze zostal zresetowany? Zrob Reset Token i wpisz nowy." if looks
+                  else "To nie wyglada na token bota (powinien miec 2 kropki i ~70 znakow). Wez go z zakladki Bot -> Reset Token, nie Application ID / Public Key / Client Secret."))
+            return 1
         hint = {401: "zly token bota", 403: "bot nie widzi kanalu (dodaj go na serwer i daj dostep do kanalu)", 404: "zle ID kanalu"}.get(e.code, "")
         print(f"Blad Discorda {e.code}: {hint}")
         return 1
