@@ -1,7 +1,8 @@
 {
-  "latest": "1.5.2",
-  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.2.jar",
+  "latest": "1.5.3",
+  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.3.jar",
   "downloads": {
+    "1.5.3": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.3.jar",
     "1.5.2": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.2.jar",
     "1.5.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.1.jar",
     "1.5.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.0.jar",
@@ -17,6 +18,13 @@
     "1.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.0.0.jar"
   },
   "changelog": [
+    "# 1.5.3",
+    "## Nowości (New Features)",
+    "- zakładka Powiadomienia: wiadomości i odpowiedzi od autora moda (Notifications tab: messages and replies from the mod author)",
+    "- nowe powiadomienia pokazują się też na czacie (new notifications also show up in chat)",
+    "## Zmiany (Changes)",
+    "- nowa ikona moda (new mod icon)",
+    "",
     "# 1.5.2",
     "## Nowości (New Features)",
     "- makro odtwarza się przy otwartym menu ESC (macro plays with the ESC menu open)",
@@ -108,5 +116,22 @@
     "",
     "# 1.0.0",
     "- pierwsza wersja (first release)"
+  ],
+  "discord": [
+    "**✉ Nowa zakładka: Powiadomienia**",
+    "W menu JALib (klawisz **K**) jest nowa zakładka **Powiadomienia** (⚑). Trafiają tam wiadomości od autora moda:",
+    "• **odpowiedzi na Twój feedback** – widzisz je tylko Ty (wysyłane na Twój nick),",
+    "• **ogłoszenia dla wszystkich** – np. o nowych wersjach czy przerwach.",
+    "Przy każdej wiadomości jest autor, czas („2 godz. temu”) i oznaczenie *Do Ciebie* / *Do wszystkich*.",
+    "",
+    "**🔔 Powiadomienia w grze**",
+    "• Mod sprawdza nowe wiadomości przy starcie gry i co 10 minut.",
+    "• Nowa wiadomość pokazuje się od razu **na czacie**, a zakładka dostaje czerwoną kropkę z licznikiem.",
+    "• Po otwarciu zakładki wiadomości oznaczają się jako przeczytane. Przycisk ⟳ sprawdza od razu.",
+    "",
+    "**📚 Nowa ikona**",
+    "JALib ma nową ikonę – regał z książkami – widoczną w menu modów (Mod Menu).",
+    "",
+    "*EN: New Notifications tab with replies to your feedback and announcements from the mod author, shown in chat when they arrive; new mod icon.*"
   ]
 }
