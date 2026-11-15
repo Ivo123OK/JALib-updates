@@ -1,0 +1,24 @@
+name: Changelog na Discorda
+
+# Gdy zmieni sie latest.json (nowa wersja JALib), wysyla info na kanal #changelog.
+on:
+  push:
+    branches: [main]
+    paths: [latest.json]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Wyslij na #changelog
+        env:
+          DISCORD_CHANGELOG_WEBHOOK: ${{ secrets.DISCORD_CHANGELOG_WEBHOOK }}
+        run: python3 .github/scripts/discord_changelog.py
