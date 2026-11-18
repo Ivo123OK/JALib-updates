@@ -4,12 +4,13 @@ Mod kliencki **JustAnotherLIB (JALib)** dla Minecraft **1.21.4** (Fabric).
 
 ## Pobierz
 
-Najnowsza wersja: **[JALib 1.5.3](pobierz/JALib-1.5.3.jar)**
+Najnowsza wersja: **[JALib 1.5.4](pobierz/JALib-1.5.4.jar)**
 
 Wrzuć plik `.jar` do folderu `.minecraft/mods` (tylko jedną wersję JALib naraz).
 
 | Wersja | Plik |
 |---|---|
+| 1.5.4 | [JALib-1.5.4.jar](pobierz/JALib-1.5.4.jar) |
 | 1.5.3 | [JALib-1.5.3.jar](pobierz/JALib-1.5.3.jar) |
 | 1.5.2 | [JALib-1.5.2.jar](pobierz/JALib-1.5.2.jar) |
 | 1.5.1 | [JALib-1.5.1.jar](pobierz/JALib-1.5.1.jar) |

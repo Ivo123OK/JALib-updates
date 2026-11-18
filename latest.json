@@ -1,7 +1,8 @@
 {
-  "latest": "1.5.3",
-  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.3.jar",
+  "latest": "1.5.4",
+  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.4.jar",
   "downloads": {
+    "1.5.4": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.4.jar",
     "1.5.3": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.3.jar",
     "1.5.2": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.2.jar",
     "1.5.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.1.jar",
@@ -18,6 +19,11 @@
     "1.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.0.0.jar"
   },
   "changelog": [
+    "# 1.5.4",
+    "## Zmiany (Changes)",
+    "- autor w Mod Menu: Ivo123OK (author in Mod Menu: Ivo123OK)",
+    "- link do strony moda w Mod Menu (mod website link in Mod Menu)",
+    "",
     "# 1.5.3",
     "## Nowości (New Features)",
     "- zakładka Powiadomienia: wiadomości i odpowiedzi od autora moda (Notifications tab: messages and replies from the mod author)",
@@ -118,20 +124,17 @@
     "- pierwsza wersja (first release)"
   ],
   "discord": [
-    "**✉ Nowa zakładka: Powiadomienia**",
-    "W menu JALib (klawisz **K**) jest nowa zakładka **Powiadomienia** (⚑). Trafiają tam wiadomości od autora moda:",
-    "• **odpowiedzi na Twój feedback** – widzisz je tylko Ty (wysyłane na Twój nick),",
-    "• **ogłoszenia dla wszystkich** – np. o nowych wersjach czy przerwach.",
-    "Przy każdej wiadomości jest autor, czas („2 godz. temu”) i oznaczenie *Do Ciebie* / *Do wszystkich*.",
+    "**👤 Autor moda**",
+    "W Mod Menu i na liście modów jako autor JALib widnieje teraz **Ivo123OK** (wcześniej było tam „you”).",
+    "Autor jest poprawiony także we wszystkich starszych wersjach do pobrania na GitHubie.",
     "",
-    "**🔔 Powiadomienia w grze**",
-    "• Mod sprawdza nowe wiadomości przy starcie gry i co 10 minut.",
-    "• Nowa wiadomość pokazuje się od razu **na czacie**, a zakładka dostaje czerwoną kropkę z licznikiem.",
-    "• Po otwarciu zakładki wiadomości oznaczają się jako przeczytane. Przycisk ⟳ sprawdza od razu.",
+    "**🔗 Linki w Mod Menu**",
+    "Na stronie JALib w Mod Menu są nowe przyciski:",
+    "• **Strona** i **Kod źródłowy** – repozytorium JALib na GitHubie,",
+    "• **Zgłoś problem** – zgłoszenia (Issues) na GitHubie.",
     "",
-    "**📚 Nowa ikona**",
-    "JALib ma nową ikonę – regał z książkami – widoczną w menu modów (Mod Menu).",
+    "Działanie moda się nie zmieniło – wszystko z 1.5.3 (powiadomienia, makro przy menu ESC itd.) działa tak samo.",
     "",
-    "*EN: New Notifications tab with replies to your feedback and announcements from the mod author, shown in chat when they arrive; new mod icon.*"
+    "*EN: Mod Menu now lists Ivo123OK as the author (also fixed in all older downloads) and has Website / Source / Issues links.*"
   ]
 }
