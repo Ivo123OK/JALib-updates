@@ -1,7 +1,8 @@
 {
-  "latest": "1.5.4",
-  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.4.jar",
+  "latest": "2.0.0",
+  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.0.jar",
   "downloads": {
+    "2.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.0.jar",
     "1.5.4": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.4.jar",
     "1.5.3": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.3.jar",
     "1.5.2": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.2.jar",
@@ -19,6 +20,13 @@
     "1.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.0.0.jar"
   },
   "changelog": [
+    "# 2.0.0",
+    "## Nowości (New Features)",
+    "- dodatkowe itemy do shulkerów, np. klucze AFK i diamenty (extra items for shulkers, e.g. AFK keys and diamonds)",
+    "- zamiana pełnych shulkerów na puste z enderchesta /ec (swapping full shulkers for empty ones from the /ec ender chest)",
+    "- wkładanie do shulkerów co X minut, bez /kit (putting items into shulkers every X minutes, without /kit)",
+    "- item bez żadnego shulkera trafia do /ec i przestaje być brany z kitu (an item with no shulker goes to /ec and stops being taken from the kit)",
+    "",
     "# 1.5.4",
     "## Zmiany (Changes)",
     "- autor w Mod Menu: Ivo123OK (author in Mod Menu: Ivo123OK)",
@@ -124,17 +132,19 @@
     "- pierwsza wersja (first release)"
   ],
   "discord": [
-    "**👤 Autor moda**",
-    "W Mod Menu i na liście modów jako autor JALib widnieje teraz **Ivo123OK** (wcześniej było tam „you”).",
-    "Autor jest poprawiony także we wszystkich starszych wersjach do pobrania na GitHubie.",
+    "**📦 Dodatkowe itemy do shulkerów**",
+    "W zakładce **Shulker** możesz dodać itemy, które mają trafiać do shulkerów razem z itemami kitu – np. **klucze AFK i diamenty** ze strefy AFK.",
+    "• wpisz id itemu małymi literami (np. `diamond`) albo fragment nazwy z wielkiej litery (np. `Klucz AFK`),",
+    "• albo kliknij **✋ Z ręki**, żeby dodać trzymany item.",
     "",
-    "**🔗 Linki w Mod Menu**",
-    "Na stronie JALib w Mod Menu są nowe przyciski:",
-    "• **Strona** i **Kod źródłowy** – repozytorium JALib na GitHubie,",
-    "• **Zgłoś problem** – zgłoszenia (Issues) na GitHubie.",
+    "**🟪 Enderchest (/ec)**",
+    "Gdy jakiś item nie ma już shulkera w eq, mod sam wpisuje **/ec**, odkłada pełne shulkery do enderchesta i bierze w zamian puste (albo te z tym itemem). Robi to za każdym razem, gdy trzeba.",
+    "Opcja **+ Chowanie**: gdy nigdzie nie ma shulkera na dany item (np. totemy w nocy), mod chowa go luzem do /ec i **przestaje go brać z kitu** – reszta działa dalej. Wstrzymane itemy wznowisz jednym kliknięciem w zakładce Shulker.",
+    "Shulkery z innymi rzeczami (np. ze zbroją) nie są ruszane.",
     "",
-    "Działanie moda się nie zmieniło – wszystko z 1.5.3 (powiadomienia, makro przy menu ESC itd.) działa tak samo.",
+    "**⏱ Wkładanie bez /kit**",
+    "Nowa opcja **Bez /kit**: mod może sam wkładać itemy do shulkerów co 2, 5 albo 10 minut (domyślnie wyłączone).",
     "",
-    "*EN: Mod Menu now lists Ivo123OK as the author (also fixed in all older downloads) and has Website / Source / Issues links.*"
+    "*EN: Extra items for shulkers (e.g. AFK keys, diamonds), automatic /ec shulker swapping, storing items with no shulker in /ec and pausing them in the kit, and depositing every X minutes without /kit.*"
   ]
 }
