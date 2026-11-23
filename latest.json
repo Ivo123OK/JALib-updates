@@ -1,7 +1,8 @@
 {
-  "latest": "2.0.1",
-  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.1.jar",
+  "latest": "2.0.2",
+  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.2.jar",
   "downloads": {
+    "2.0.2": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.2.jar",
     "2.0.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.1.jar",
     "2.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.0.jar",
     "1.5.4": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.4.jar",
@@ -21,6 +22,13 @@
     "1.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.0.0.jar"
   },
   "changelog": [
+    "# 2.0.2",
+    "## Nowości (New Features)",
+    "- hasło /login dla kont non-premium przy auto-rejoin (/login password for non-premium accounts in auto-rejoin)",
+    "## Zmiany (Changes)",
+    "- domyślny tryb auto-rejoin: PYK PRACTICE (default auto-rejoin mode: PYK PRACTICE)",
+    "- czas do następnego /kit pokazany w opisie Makro /kit (time to the next /kit shown in the /kit macro description)",
+    "",
     "# 2.0.1",
     "## Nowości (New Features)",
     "- auto-rejoin po restarcie serwera i wybór trybu kompasem (auto-rejoin after a server restart and picking the mode with the compass)",
@@ -140,22 +148,16 @@
     "- pierwsza wersja (first release)"
   ],
   "discord": [
-    "**🔄 Auto-rejoin**",
-    "Gdy serwer wyrzuci cię z gry z innego powodu niż zwykłe wyjście (np. **nocny restart kodmc**), JALib sam połączy cię z powrotem.",
-    "• pokazuje się ekran z odliczaniem – pierwsza próba po **5 s**, kolejne co **30 s** (do 60 prób),",
-    "• **▶ Połącz teraz** łączy od razu, **✖ Anuluj** albo **Esc** przerywa,",
-    "• zwykłe wyjście przez menu (Rozłącz) **nie** włącza auto-rejoin.",
-    "",
-    "**🧭 Wybór trybu**",
-    "Po powrocie mod klika prawym kompas z **5. slotu**, otwiera menu serwerów i wybiera tryb wpisany w polu trybu (np. `pyk practice`). Wielkość liter, kolory i ozdobne litery nie mają znaczenia.",
-    "Jeśli trybu nie ma w menu, mod nic nie klika i pisze na czacie, jakie tryby są dostępne. Puste pole = tylko powrót na serwer.",
-    "",
-    "**🧪 Przycisk Test**",
-    "W zakładce **General**, w wierszu Auto-rejoin, jest przycisk **Test** – rozłącza cię raz, żebyś mógł sprawdzić, czy wszystko działa.",
+    "**🔑 Auto-rejoin na kontach non-premium**",
+    "W zakładce **General** jest nowe pole **Hasło (/login)**. Jeśli grasz na koncie **non-premium**, wpisz tam swoje hasło – bez niego auto-rejoin nie dołączy.",
+    "• po ponownym połączeniu mod sam wpisze `/login hasło`, a potem jak wcześniej: kompas ze slotu 5 → wybór trybu,",
+    "• hasło widać tylko jako kropki i jest zapisane wyłącznie na twoim komputerze,",
+    "• konto premium? Zostaw pole puste.",
     "",
     "**⚙ Zmiany**",
-    "Opcja **Blur tła** jest teraz w zakładce **Ustawienia**.",
+    "• domyślny tryb auto-rejoin to teraz **PYK PRACTICE**,",
+    "• czas do następnego /kit widać w opisie **Makro /kit** w zakładce General.",
     "",
-    "*EN: Auto-rejoin after any non-voluntary disconnect (e.g. server restart) with a countdown screen, automatic mode selection via the slot 5 compass, a Test button that disconnects you once, and background blur moved to Settings.*"
+    "*EN: New /login password field for non-premium accounts – after reconnecting the mod logs in and then picks the mode. Default auto-rejoin mode is now PYK PRACTICE.*"
   ]
 }
