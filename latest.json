@@ -1,7 +1,8 @@
 {
-  "latest": "2.0.0",
-  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.0.jar",
+  "latest": "2.0.1",
+  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.1.jar",
   "downloads": {
+    "2.0.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.1.jar",
     "2.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.0.jar",
     "1.5.4": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.4.jar",
     "1.5.3": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.5.3.jar",
@@ -20,6 +21,13 @@
     "1.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.0.0.jar"
   },
   "changelog": [
+    "# 2.0.1",
+    "## Nowości (New Features)",
+    "- auto-rejoin po restarcie serwera i wybór trybu kompasem (auto-rejoin after a server restart and picking the mode with the compass)",
+    "- przycisk Test, który raz rozłącza z serwerem (Test button that disconnects from the server once)",
+    "## Zmiany (Changes)",
+    "- Blur tła przeniesiony do Ustawień (Background blur moved to Settings)",
+    "",
     "# 2.0.0",
     "## Nowości (New Features)",
     "- dodatkowe itemy do shulkerów, np. klucze AFK i diamenty (extra items for shulkers, e.g. AFK keys and diamonds)",
@@ -132,19 +140,22 @@
     "- pierwsza wersja (first release)"
   ],
   "discord": [
-    "**📦 Dodatkowe itemy do shulkerów**",
-    "W zakładce **Shulker** możesz dodać itemy, które mają trafiać do shulkerów razem z itemami kitu – np. **klucze AFK i diamenty** ze strefy AFK.",
-    "• wpisz id itemu małymi literami (np. `diamond`) albo fragment nazwy z wielkiej litery (np. `Klucz AFK`),",
-    "• albo kliknij **✋ Z ręki**, żeby dodać trzymany item.",
+    "**🔄 Auto-rejoin**",
+    "Gdy serwer wyrzuci cię z gry z innego powodu niż zwykłe wyjście (np. **nocny restart kodmc**), JALib sam połączy cię z powrotem.",
+    "• pokazuje się ekran z odliczaniem – pierwsza próba po **5 s**, kolejne co **30 s** (do 60 prób),",
+    "• **▶ Połącz teraz** łączy od razu, **✖ Anuluj** albo **Esc** przerywa,",
+    "• zwykłe wyjście przez menu (Rozłącz) **nie** włącza auto-rejoin.",
     "",
-    "**🟪 Enderchest (/ec)**",
-    "Gdy jakiś item nie ma już shulkera w eq, mod sam wpisuje **/ec**, odkłada pełne shulkery do enderchesta i bierze w zamian puste (albo te z tym itemem). Robi to za każdym razem, gdy trzeba.",
-    "Opcja **+ Chowanie**: gdy nigdzie nie ma shulkera na dany item (np. totemy w nocy), mod chowa go luzem do /ec i **przestaje go brać z kitu** – reszta działa dalej. Wstrzymane itemy wznowisz jednym kliknięciem w zakładce Shulker.",
-    "Shulkery z innymi rzeczami (np. ze zbroją) nie są ruszane.",
+    "**🧭 Wybór trybu**",
+    "Po powrocie mod klika prawym kompas z **5. slotu**, otwiera menu serwerów i wybiera tryb wpisany w polu trybu (np. `pyk practice`). Wielkość liter, kolory i ozdobne litery nie mają znaczenia.",
+    "Jeśli trybu nie ma w menu, mod nic nie klika i pisze na czacie, jakie tryby są dostępne. Puste pole = tylko powrót na serwer.",
     "",
-    "**⏱ Wkładanie bez /kit**",
-    "Nowa opcja **Bez /kit**: mod może sam wkładać itemy do shulkerów co 2, 5 albo 10 minut (domyślnie wyłączone).",
+    "**🧪 Przycisk Test**",
+    "W zakładce **General**, w wierszu Auto-rejoin, jest przycisk **Test** – rozłącza cię raz, żebyś mógł sprawdzić, czy wszystko działa.",
     "",
-    "*EN: Extra items for shulkers (e.g. AFK keys, diamonds), automatic /ec shulker swapping, storing items with no shulker in /ec and pausing them in the kit, and depositing every X minutes without /kit.*"
+    "**⚙ Zmiany**",
+    "Opcja **Blur tła** jest teraz w zakładce **Ustawienia**.",
+    "",
+    "*EN: Auto-rejoin after any non-voluntary disconnect (e.g. server restart) with a countdown screen, automatic mode selection via the slot 5 compass, a Test button that disconnects you once, and background blur moved to Settings.*"
   ]
 }
