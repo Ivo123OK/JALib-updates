@@ -1,7 +1,8 @@
 {
-  "latest": "2.0.2",
-  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.2.jar",
+  "latest": "2.0.3",
+  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.3.jar",
   "downloads": {
+    "2.0.3": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.3.jar",
     "2.0.2": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.2.jar",
     "2.0.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.1.jar",
     "2.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.0.jar",
@@ -22,6 +23,12 @@
     "1.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.0.0.jar"
   },
   "changelog": [
+    "# 2.0.3",
+    "## Nowości (New Features)",
+    "- auto-rejoin po bezpiecznym restarcie (przeniesienie do lobby): kompas i tryb (auto-rejoin after a safe restart (moved to the lobby): compass and mode)",
+    "## Zmiany (Changes)",
+    "- makro /kit czeka, aż auto-rejoin wybierze tryb (the /kit macro waits until auto-rejoin picks the mode)",
+    "",
     "# 2.0.2",
     "## Nowości (New Features)",
     "- hasło /login dla kont non-premium przy auto-rejoin (/login password for non-premium accounts in auto-rejoin)",
@@ -148,16 +155,17 @@
     "- pierwsza wersja (first release)"
   ],
   "discord": [
-    "**🔑 Auto-rejoin na kontach non-premium**",
-    "W zakładce **General** jest nowe pole **Hasło (/login)**. Jeśli grasz na koncie **non-premium**, wpisz tam swoje hasło – bez niego auto-rejoin nie dołączy.",
-    "• po ponownym połączeniu mod sam wpisze `/login hasło`, a potem jak wcześniej: kompas ze slotu 5 → wybór trybu,",
-    "• hasło widać tylko jako kropki i jest zapisane wyłącznie na twoim komputerze,",
-    "• konto premium? Zostaw pole puste.",
+    "**🔁 Auto-rejoin po bezpiecznym restarcie**",
+    "Czasem kodmc robi **bezpieczny restart** – przenosi wszystkich do lobby, ale nie wyrzuca z serwera. JALib teraz to wykrywa i sam wraca do trybu: **kompas ze slotu 5 → tryb** (bez ponownego łączenia i bez /login).",
+    "Mod uznaje to za bezpieczny restart, gdy:",
+    "• byłeś w trybie co najmniej **10 s**,",
+    "• serwer przeniósł cię do lobby (w slocie 5 pojawił się kompas),",
+    "• przez ostatnie **20 s** sam nic nie robiłeś (czat, PPM).",
+    "Jeśli sam wpiszesz `/lobby` albo klikniesz przedmiot wyjścia – mod nic nie robi. Makra (/kit i nagrane) nie liczą się jako twoje ruchy.",
     "",
     "**⚙ Zmiany**",
-    "• domyślny tryb auto-rejoin to teraz **PYK PRACTICE**,",
-    "• czas do następnego /kit widać w opisie **Makro /kit** w zakładce General.",
+    "• makro /kit **czeka**, aż auto-rejoin wybierze tryb (+5 s), żeby nie wpisywać /kit w lobby i nie zamykać menu z kompasu. Po wszystkim działa dalej samo.",
     "",
-    "*EN: New /login password field for non-premium accounts – after reconnecting the mod logs in and then picks the mode. Default auto-rejoin mode is now PYK PRACTICE.*"
+    "*EN: Auto-rejoin now handles safe restarts (moved to the lobby without a kick) – it goes back to the mode with the compass. The /kit macro waits until auto-rejoin finishes.*"
   ]
 }
