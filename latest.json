@@ -1,7 +1,8 @@
 {
-  "latest": "2.0.3",
-  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.3.jar",
+  "latest": "2.0.4",
+  "download": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.4.jar",
   "downloads": {
+    "2.0.4": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.4.jar",
     "2.0.3": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.3.jar",
     "2.0.2": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.2.jar",
     "2.0.1": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-2.0.1.jar",
@@ -23,6 +24,17 @@
     "1.0.0": "https://github.com/Ivo123OK/JALib-updates/blob/main/pobierz/JALib-1.0.0.jar"
   },
   "changelog": [
+    "# 2.0.4",
+    "## Nowości (New Features)",
+    "- Fullbright w Ustawieniach (Fullbright in Settings)",
+    "- przewijanie menu kółkiem myszy (scrolling the menu with the mouse wheel)",
+    "- baner o nowej wersji w każdej zakładce (new version banner in every tab)",
+    "- lista graczy z JALib na Discordzie, można wyłączyć w Ustawieniach (JALib player list on Discord, can be turned off in Settings)",
+    "## Naprawy Błędów (Bug Fixes)",
+    "- naprawiono nachodzenie na siebie tekstu w menu (fixed overlapping text in the menu)",
+    "## Zmiany (Changes)",
+    "- żadnych wiadomości na czacie - powiadomienia i komunikaty moda tylko w zakładce Powiadomienia (no chat messages at all - notifications and mod messages only in the Notifications tab)",
+    "",
     "# 2.0.3",
     "## Nowości (New Features)",
     "- auto-rejoin po bezpiecznym restarcie (przeniesienie do lobby): kompas i tryb (auto-rejoin after a safe restart (moved to the lobby): compass and mode)",
@@ -155,17 +167,21 @@
     "- pierwsza wersja (first release)"
   ],
   "discord": [
-    "**🔁 Auto-rejoin po bezpiecznym restarcie**",
-    "Czasem kodmc robi **bezpieczny restart** – przenosi wszystkich do lobby, ale nie wyrzuca z serwera. JALib teraz to wykrywa i sam wraca do trybu: **kompas ze slotu 5 → tryb** (bez ponownego łączenia i bez /login).",
-    "Mod uznaje to za bezpieczny restart, gdy:",
-    "• byłeś w trybie co najmniej **10 s**,",
-    "• serwer przeniósł cię do lobby (w slocie 5 pojawił się kompas),",
-    "• przez ostatnie **20 s** sam nic nie robiłeś (czat, PPM).",
-    "Jeśli sam wpiszesz `/lobby` albo klikniesz przedmiot wyjścia – mod nic nie robi. Makra (/kit i nagrane) nie liczą się jako twoje ruchy.",
+    "**💡 Fullbright**",
+    "W zakładce **Ustawienia** jest nowy przełącznik **Fullbright** – pełna jasność, jak w dzień, także w jaskiniach i w nocy. Działa **bez paczki tekstur**, więc także na kodmc. Po wyłączeniu wraca twoja jasność.",
     "",
-    "**⚙ Zmiany**",
-    "• makro /kit **czeka**, aż auto-rejoin wybierze tryb (+5 s), żeby nie wpisywać /kit w lobby i nie zamykać menu z kompasu. Po wszystkim działa dalej samo.",
+    "**🖱 Przewijanie menu**",
+    "Każdą zakładkę można teraz przewijać **kółkiem myszy** (pasek z prawej). Nic już nie wychodzi poza okno i tekst nie nachodzi na siebie.",
     "",
-    "*EN: Auto-rejoin now handles safe restarts (moved to the lobby without a kick) – it goes back to the mode with the compass. The /kit macro waits until auto-rejoin finishes.*"
+    "**⬆ Baner aktualizacji**",
+    "Gdy wyjdzie nowa wersja, na górze każdej zakładki pojawi się zielony baner z linkiem do pobrania – nie przegapisz aktualizacji.",
+    "",
+    "**📋 Lista graczy**",
+    "Raz dziennie mod wysyła twój **nick i wersję JALib** na listę użytkowników na Discordzie – nic więcej. Możesz to wyłączyć w **Ustawieniach → Nick na liście graczy**.",
+    "",
+    "**🔕 Zero spamu na czacie**",
+    "JALib nie pisze już nic na czacie. Powiadomienia i komunikaty moda (auto-rejoin, shulkery, /ec) znajdziesz w zakładce **Powiadomienia** – nowe oznacza czerwona kropka.",
+    "",
+    "*EN: Fullbright toggle (works without a texture pack), mouse-wheel scrolling in every tab with overlapping text fixed, an update banner in every tab, an opt-out JALib player list on Discord, and no more chat messages – everything goes to the Notifications tab.*"
   ]
 }
