@@ -1,6 +1,13 @@
 {
   "notifications": [
     {
+      "id": "1575150775338934485-0",
+      "to": "all",
+      "text": "Dodano nową wersję JALib, ma mnóstwo świetnych opcji, zaktualizuj już teraz.",
+      "author": "Ivo123OK",
+      "date": 1795615609727
+    },
+    {
       "id": "1571606871955996754-0",
       "to": "niedzwiadekubus",
       "text": "nie, nie jestem gejem",
