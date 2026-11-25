@@ -26,6 +26,12 @@ jobs:
           DISCORD_ALLOWED_USERS: ${{ secrets.DISCORD_ALLOWED_USERS }}
           DISCORD_AUTHOR_NAME: ${{ secrets.DISCORD_AUTHOR_NAME }}
         run: python3 .github/scripts/discord_sync.py
+      - name: Lista uzytkownikow JALib
+        continue-on-error: true
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_USERS_CHANNEL: ${{ secrets.DISCORD_USERS_CHANNEL }}
+        run: python3 .github/scripts/discord_users.py
       - name: Zapisz zmiany
         run: |
           if [ -n "$(git status --porcelain notifications.json)" ]; then
